@@ -1,0 +1,144 @@
+.footer {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  color: #ecf0f1;
+  padding: 3rem 2rem 1rem;
+  margin-top: 4rem;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-section {
+  padding: 1rem;
+}
+
+.footer-section h4 {
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+  color: #3498db;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.5rem;
+}
+
+.footer-section p {
+  margin: 0;
+  line-height: 1.6;
+  color: #bdc3c7;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+  color: #bdc3c7;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #3498db;
+  padding-left: 0.5rem;
+}
+
+.social-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(52, 152, 219, 0.2);
+  transition: all 0.3s ease;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid #3498db;
+}
+
+.social-icon:hover {
+  background: #3498db;
+  transform: translateY(-3px);
+}
+
+.facebook:hover {
+  background: #4267B2;
+  border-color: #4267B2;
+}
+
+.twitter:hover {
+  background: #000;
+  border-color: #000;
+}
+
+.instagram:hover {
+  background: linear-gradient(45deg, #405de6, #e1306c);
+  border-color: #e1306c;
+}
+
+.linkedin:hover {
+  background: #0077B5;
+  border-color: #0077B5;
+}
+
+.youtube:hover {
+  background: #FF0000;
+  border-color: #FF0000;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1.5rem;
+  text-align: center;
+  color: #95a5a6;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .footer {
+    padding: 2rem 1rem 1rem;
+    margin-top: 2rem;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .footer-section {
+    padding: 0.5rem;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+}
