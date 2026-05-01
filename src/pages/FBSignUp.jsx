@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { auth, db } from "../lib/firebase";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { doc, setDoc } from 'firebase/firestore';
-import HomePage from "./HomePage";
+import HomePage from "./pages/HomePage";
 
 import "./FBSignUp.css";
 
@@ -75,7 +75,7 @@ function FBSignUp({ setUser }) {
       if (setUser) setUser(userData);
 
       // 5. Send them back to the Home page
-      navigate(HomePage);
+      navigate('/HomePage');
       
     } catch (err) {
       console.error("Sign up error:", err);
