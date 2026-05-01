@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
-// Import Firebase tools
-import { auth, db } from '../firebase'; 
-import { createUserWithEmailAndPassword } from 'firebase/auth';
-import { doc, setDoc } from 'firebase/firestore';
-import './FBSignUp.css';
+import React, {userState} from "react";
+import { useNavigate } from "react-router-dom";
+
+import { auth, db } from "../lib/firebase";
+import { createUserWithEmailAndPassword } from "firebase/auth";
+import { collection, addDoc } from "firebase/firestore";
+
+import "./FBSignUp.css";
 
 function FBSignUp({ setUser }) {
   const navigate = useNavigate();
