@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { validations } from '../utils/validations';
+import FBSignUp from './FBSignUp';
 import './LoginPage.css';
 
 function LoginPage({ setUser }) {
