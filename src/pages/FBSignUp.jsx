@@ -149,7 +149,7 @@ function FBSignUp({ setUser }) {
           </button>
 
           <div className="login-link">
-            Already have an account? <Link to="/login">Log in here</Link>
+                <a href="/login">Log in here</a>
           </div>
 
         </form>
