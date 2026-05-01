@@ -195,7 +195,7 @@ function LoginPage({ setUser }) {
 
           {/* Register Link */}
           <div className="register-link">
-            Don't have an account? <a href="/register">Create one now</a>
+            Don't have an account? <a href="/FBSignUp">Create one now</a>
           </div>
         </form>
       </div>

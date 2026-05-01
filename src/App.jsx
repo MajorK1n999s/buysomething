@@ -14,6 +14,7 @@ import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import AboutUsPage from './pages/AboutUsPage';
 import ContactPage from './pages/ContactPage';
+import FBSignUp from './pages/FBSignUp';
 
 import './App.css';
 
@@ -52,7 +53,8 @@ function App() {
             <Route path="/" element={user ? <HomePage addToCart={addToCart} /> : <Navigate to="/login" replace />} />
             <Route path="/product/:id" element={user ? <ProductDetailPage addToCart={addToCart} /> : <Navigate to="/login" replace />} />
             <Route path="/login" element={user ? <Navigate to="/" replace /> : <LoginPage setUser={setUser} />} />
-            <Route path="/register" element={user ? <Navigate to="/" replace /> : <RegisterPage setUser={setUser} />} />
+            {/* <Route path="/register" element={user ? <Navigate to="/" replace /> : <RegisterPage setUser={setUser} />} /> */}
+            <Route path="/FBSignUp" element={user ? <Navigate to="/" replace /> : <FBSignUp />} />
             <Route path="/profile" element={user ? <ProfilePage user={user} setUser={setUser} /> : <Navigate to="/login" replace />} />
             <Route path="/about" element={user ? <AboutUsPage /> : <Navigate to="/login" replace />} />
             <Route path="/contact" element={user ? <ContactPage /> : <Navigate to="/login" replace />} />
