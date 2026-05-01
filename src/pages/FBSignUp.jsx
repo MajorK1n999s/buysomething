@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 import { auth, db } from "../lib/firebase";
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import { setDoc, addDoc } from "firebase/firestore";
+import { doc, setDoc } from 'firebase/firestore';
 
 import "./FBSignUp.css";
 
