@@ -50,3 +50,5 @@ function FBSignUp() {
         </div>
     );
 }
+
+export default FBSignUp;
