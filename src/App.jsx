@@ -56,6 +56,7 @@ function App() {
             <Route path="/login" element={user ? <Navigate to="/" replace /> : <FBLogin setUser={setUser} />} />
             <Route path="/register" element={user ? <Navigate to="/" replace /> : <FBSignUp setUser={setUser} />} />
             <Route path="/profile" element={user ? <ProfilePage user={user} setUser={setUser} /> : <Navigate to="/login" replace />} />
+            <Route path="/update-password" element={user ? <UpdatePassPage user={user} /> : <Navigate to="/login" replace /> } />
             <Route path="/about" element={user ? <AboutUsPage /> : <Navigate to="/login" replace />} />
             <Route path="/contact" element={user ? <ContactPage /> : <Navigate to="/login" replace />} />
             <Route path="*" element={user ? <Navigate to="/" replace /> : <Navigate to="/login" replace />} />

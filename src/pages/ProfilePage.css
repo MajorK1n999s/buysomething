@@ -301,4 +301,35 @@
   .login-container {
     padding: 2rem 1rem;
   }
+
+    .change-password-btn {
+    background: white;
+    color: #e74c3c;
+    border: 2px solid #e74c3c;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    width: 100%;
+  }
+
+  .change-password-btn:hover {
+    background: #e74c3c;
+    color: white;
+    box-shadow: 0 4px 12px rgba(231, 76, 60, 0.2);
+  }
+
+  /* Adjust profile-actions for side-by-side buttons on desktop */
+  .profile-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    .profile-actions {
+      flex-direction: column;
+    }
+  }
 }
