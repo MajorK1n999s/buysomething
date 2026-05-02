@@ -129,7 +129,7 @@ function ProfilePage({ user, setUser }) {
         state: formData.state,
         pincode: formData.pincode,
         photoURL: profileImage,  // Saves the local image
-        modified: new Date()     // Logs when the update happened
+        modifiedAt: new Date()     // Logs when the update happened
       };
 
       // Update Firestore
