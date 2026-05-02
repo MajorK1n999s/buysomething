@@ -10,11 +10,12 @@ import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import ProductDetailPage from './pages/ProductDetailPage';
 import ProfilePage from './pages/ProfilePage';
-import LoginPage from './pages/LoginPage';
-import RegisterPage from './pages/RegisterPage';
+//import LoginPage from './pages/LoginPage';
+//import RegisterPage from './pages/RegisterPage';
 import AboutUsPage from './pages/AboutUsPage';
 import ContactPage from './pages/ContactPage';
 import FBSignUp from './pages/FBSignUp';
+import FBLogin from './pages/FBLogin';
 
 import './App.css';
 
@@ -52,7 +53,8 @@ function App() {
           <Routes>
             <Route path="/" element={user ? <HomePage addToCart={addToCart} /> : <Navigate to="/login" replace />} />
             <Route path="/product/:id" element={user ? <ProductDetailPage addToCart={addToCart} /> : <Navigate to="/login" replace />} />
-            <Route path="/login" element={user ? <Navigate to="/" replace /> : <LoginPage setUser={setUser} />} />
+            {/* <Route path="/login" element={user ? <Navigate to="/" replace /> : <LoginPage setUser={setUser} />} /> */}
+            <Route path="/FBLogin" element={user ? <Navigate to="/" replace /> : <FBLogin setUser={setUser} />} />
             {/* <Route path="/register" element={user ? <Navigate to="/" replace /> : <RegisterPage setUser={setUser} />} /> */}
             <Route path="/FBSignUp" element={user ? <Navigate to="/" replace /> : <FBSignUp />} />
             <Route path="/profile" element={user ? <ProfilePage user={user} setUser={setUser} /> : <Navigate to="/login" replace />} />
