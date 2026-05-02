@@ -115,7 +115,8 @@ function FBSignUp({ setUser }) {
         pincode: formData.pincode,
         email: formData.email,
         createdAt: new Date(),
-        modifiedAt: null // <-- Added this exactly as you requested!
+        modifiedAt: null, // <-- Added this exactly as you requested!
+        photoURL: null        // <-- Added this for your future image URL!
       };
 
       await setDoc(doc(db, 'users', user.uid), userData);
