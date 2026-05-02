@@ -16,6 +16,7 @@ import AboutUsPage from './pages/AboutUsPage';
 import ContactPage from './pages/ContactPage';
 import FBSignUp from './pages/FBSignUp';
 import FBLogin from './pages/FBLogin';
+import UpdatePassPage from './pages/UpdatePassPage';
 
 import './App.css';
 
