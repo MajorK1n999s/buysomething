@@ -1,4 +1,5 @@
 import React, { useState, useMemo } from 'react';
+import { useLocation } from 'react-router-dom';
 import ProductCard from '../components/ProductCard';
 import { products } from '../data/products';
 import './HomePage.css';
@@ -6,6 +7,19 @@ import './HomePage.css';
 function HomePage({ addToCart }) {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [searchTerm, setSearchTerm] = useState('');
+  const location = useLocation();
+
+  // Extract category from URL query parameters
+  React.useEffect(() => {
+    const urlParams = new URLSearchParams(location.search);
+    const categoryFromURL = urlParams.get('category');
+    if (categoryFromURL) {
+      setSelectedCategory(categoryFromURL);
+    }
+    else{
+      setSelectedCategory('All');
+    }
+  }, [location.search]);
 
   const categories = ['All', 'Electronics', 'Clothing', 'Books', 'Home & Garden', 'Sports', 'Toys'];
 
