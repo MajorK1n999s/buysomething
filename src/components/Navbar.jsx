@@ -87,7 +87,7 @@ function Navbar({ cartCount, user, onLogout }) {
                 {user ? (
                   <>
                     <li className="dropdown-item">
-                      <Link to="/profile" className="dropdown-link">
+                      <Link to="/profile" className="dropdown-link" onClick={() => setProfileOpen(false)}>
                         Edit Profile
                       </Link>
                     </li>
@@ -101,7 +101,7 @@ function Navbar({ cartCount, user, onLogout }) {
                 ) : (
                   <>
                     <li className="dropdown-item">
-                      <Link to="/profile" className="dropdown-link">
+                      <Link to="/profile" className="dropdown-link" onClick={() => setProfileOpen(false)}>
                         Login / Register
                       </Link>
                     </li>
