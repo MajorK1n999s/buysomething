@@ -41,22 +41,22 @@ function ContactPage() {
           <div className="info-card">
             <div className="info-icon">📧</div>
             <h3>Email</h3>
-            <p><a href="mailto:support@buysomething.com">support@buysomething.com</a></p>
+            <p><a href="mailto:mahebubbashasaache@gmail.com">mahebubbashasaache@gmail.com</a></p>
             <p className="small">We'll respond within 24 hours</p>
           </div>
 
           <div className="info-card">
             <div className="info-icon">📞</div>
             <h3>Phone</h3>
-            <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
+            <p><a href="tel:+917385772505">+91 7385772505</a></p>
             <p className="small">Monday - Friday, 9 AM - 6 PM</p>
           </div>
 
           <div className="info-card">
             <div className="info-icon">📍</div>
             <h3>Address</h3>
-            <p>123 Shopping Street<br />Commerce City, CC 12345</p>
-            <p className="small">International Delivery Available</p>
+            <p>Ausa Market Yard<br />Ausa City, Ausa 413520</p>
+            <p className="small">International Delivery Unavailable !</p>
           </div>
 
           <div className="social-contact-card">
