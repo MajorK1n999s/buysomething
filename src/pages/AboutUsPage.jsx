@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './AboutUsPage.css';
 
 function AboutUsPage() {
@@ -115,7 +116,7 @@ function AboutUsPage() {
         <section className="about-section cta-section">
           <h2>Join Our Community</h2>
           <p>Start shopping today and experience the Buy SomeThing difference!</p>
-          <a href="/" className="cta-button">Start Shopping</a>
+          <Link to="/" className="cta-button">Start Shopping</Link>
         </section>
       </div>
     </div>
