@@ -58,7 +58,7 @@ function Navbar({ cartCount, user, onLogout }) {
               <ul className="dropdown-menu">
                 {categories.map(cat => (
                   <li key={cat} className="dropdown-item">
-                    <Link to={`/?category=${cat}`} className="dropdown-link">
+                    <Link to={`/category/${cat}`} className="dropdown-link">
                       {cat}
                     </Link>
                   </li>
